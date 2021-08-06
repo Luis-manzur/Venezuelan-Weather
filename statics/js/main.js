@@ -23,7 +23,7 @@ const selectCity = () => {
 const renderWeatherInfoTemplate = (selectedCity) => {
     document.getElementById('app').innerHTML = document.getElementById('loading-template').innerHTML
 
-    fetch('http://localhost:5000/'+ selectedCity)
+    fetch('https://venezuelan-weather.herokuapp.com/'+ selectedCity)
     .then(response => response.json())
     .then(data => {
         weatherNow = data
