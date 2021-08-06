@@ -41,13 +41,13 @@ const readData = (data, selectedCity) => {
     temperature.innerHTML = dataTemperature + ' Cº     '
     const feelsLike = document.getElementById('feels-like')
     dataFeelsLike = data['now_weather']['feels_like']
-    feelsLike.innerHTML = 'Sensacion: '+dataFeelsLike + ' Cº'
+    feelsLike.innerHTML = 'Sensación: '+dataFeelsLike + ' Cº'
     const maxTemp = document.getElementById('max-temp')
     const dataMaxTemp = data['now_weather']['max_temp']
     maxTemp.innerHTML = 'Temp Maxima: ' + dataMaxTemp + ' Cº'
     const minTemp = document.getElementById('min-temp')
     const dataMinTemp = data['now_weather']['min_temp']
-    minTemp.innerHTML = 'Temp Minima: ' + dataMinTemp + ' Cº'
+    minTemp.innerHTML = 'Temp Mínima: ' + dataMinTemp + ' Cº'
     const humidity = document.getElementById('humidity')
     const dataHumidity = data['now_weather']['humidity']
     humidity.innerHTML = 'Humedad: ' + dataHumidity + '%'

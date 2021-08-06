@@ -199,3 +199,44 @@ h2 {
   border-bottom-right-radius: 0px;
   min-height: calc(100vh - 86px);
 }
+
+@media screen and (max-width: 1239px){
+  .col-3{
+    width: 100%;
+    padding: 0px;
+  }
+  .col-6{
+    width: 100%;
+    padding: 0px;
+    display: block;
+    align-content: center;
+    text-align: center;
+    
+  }
+  .col2{
+    padding: 0px;
+    padding-top: 40px;
+  }
+  .col-4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .container {
+    display: block;
+    align-content: center;
+  }
+  .row-1{
+    float:none;
+  }
+
+  .dropbtn2 {
+    position: sticky;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+}
