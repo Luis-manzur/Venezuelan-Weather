@@ -71,14 +71,14 @@ const readData = (data, selectedCity) => {
 
 const setImage = (dataWeatherDescription) => {
     if (dataWeatherDescription == 'drizzle') {
-        let imgSrc = '../statics/img/raining.png'
+        let imgSrc = '../static/img/raining.png'
         return imgSrc
 
     }else if (dataWeatherDescription == 'broken clouds' || dataWeatherDescription == 'overcast clouds') {
-        let imgSrc = '../statics/img/cloud.png'
+        let imgSrc = '../static/img/cloud.png'
         return imgSrc
     }else if (dataWeatherDescription == 'scattered clouds' || dataWeatherDescription == 'few clouds') {
-        let imgSrc = '../statics/img/Logo.png'
+        let imgSrc = '../static/img/Logo.png'
         return imgSrc
     }
     

@@ -1,4 +1,5 @@
-from flask import Flask, jsonify
+from flask import Flask, render_template, request, flash, jsonify
+from flask.wrappers import Request
 import requests,json
 from flask_cors import CORS
 
@@ -7,9 +8,9 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def render_main():
-    return {"name": "Laptop"}
+    return render_template('main.html')
 
 
 @app.route('/<string:city_name>')
@@ -56,5 +57,5 @@ def get_exact_weather(response):
     return exact_weather
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(port=5000)
 
