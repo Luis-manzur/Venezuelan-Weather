@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../statics/img/Logo.png" type="image/x-icon">
+    <title>Weather Venezuela</title>
+    <link rel="stylesheet" href="/statics/css/main.css">
+</head>
+<body>
+    <div id="app">
+    </div>
+</body>
+<template id="initial-template">
+    <h1>El Clima Venezuela</h1>
+    <div class="container">
+        <div class="col2">
+            <p>Selecciona Una Ciudad</p>
+            <div class="dropdown2">
+                <form id="select-city">
+                    <select class="dropbtn2" id="city-selected">
+                        <div class="dropdown-content2">
+                            <option value="None" selected>Ciudades</option>
+                            <option value="Barquisimeto">Barquisimeto</option>
+                            <option value="Caracas">Caracas</option>
+                            <option value="Maracaibo">Maracaibo</option>
+                            <option value="Margarita">Margarita</option>
+                            <option value="Merida,Ve">Merida</option>
+                            <option value="Valencia,Ve">Valencia</option>
+                        </div>
+                    </select>
+                    <input type="submit" value="Buscar" class="dropbtn1">
+                </form>
+            </div>
+            <div class="img">
+                <img src="../statics/img/Logo.png" height="200px" width="200px" style="margin-top: 100px;">
+            </div>
+        </div>
+    </div>
+</template>
+<template id="loading-template">
+    <h1>El Clima Venezuela</h1>
+    <div class="container1">
+        <div style="text-align: center;">
+            <h1 style="text-align: center; color: black; ">Cargando...</h1>
+        </div>
+    </div> 
+</template>
+<template id="weather-info-template">
+    <h1>El Clima Venezuela</h1>
+    <div class="container">
+        <div class="col col-3">
+            <h2 id="city-name">Cargando...</h2>
+            <div class="row-center-icon" id="2">
+                <img src="" height="200px" width="200px" id="principal">
+                <p id="weather-description" style="margin-top: 0px;"></p>
+            </div>
+            <div class="row-text-icon" id="1">
+                <img src="../statics/img/thermometer.png" height="25px" width="25px" style="align-self: center;">
+                <p id="temperature"></p>
+                <p id="feels-like"></p>
+            </div>
+            
+            
+        </div>
+        <div class="col col-6">
+            <div class="row-1">
+                <div class="dropdown1">
+                    <form id="select-city">
+                        <select class="dropbtn2" id="city-selected">
+                            <div class="dropdown-content2">
+                                <option value="None" selected>Ciudades</option>
+                                <option value="Barquisimeto">Barquisimeto</option>
+                                <option value="Caracas">Caracas</option>
+                                <option value="Maracaibo">Maracaibo</option>
+                                <option value="Margarita">Margarita</option>
+                                <option value="Merida,Ve">Merida</option>
+                                <option value="Valencia,Ve">Valencia</option>
+                            </div>
+                        </select>
+                        <input type="submit" value="Buscar" class="dropbtn1">
+                    </form>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="../statics/img/hot.png" height="100px" width="100px" style="margin-right: 20px;">
+                        <p id="max-temp">Cargando...</p>
+                    </div>
+                    <div class="card">
+                        <img src="../statics/img/cold.png" height="100px" width="100px" style="margin-right: 20px;">
+                        <p id="min-temp">Cargando...</p>
+                    </div>
+                    <div class="card">
+                        <img src="../statics/img/wind.png" height="100px" width="100px">
+                        <p id="wind-speed">Cargando...</p>
+                    </div>
+                    <div class="card">
+                        <img src="../statics/img/humidity.png" height="100px" width="100px">
+                        <p id="humidity">Cargando...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<script src="../statics/js/main.js"></script>
+</html>
