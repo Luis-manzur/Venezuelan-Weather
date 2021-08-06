@@ -42,9 +42,6 @@ h2 {
     justify-content: center;
 }
 
-.row-1 {
-    float: right;
-}
 
 /* Style The Dropdown Button */
 .dropbtn1 {
@@ -58,8 +55,7 @@ h2 {
   
   /* The container <div> - needed to position the dropdown content */
   .dropdown1 {
-    position: relative;
-    display: inline-block;
+    float: right;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -229,14 +225,13 @@ h2 {
     display: block;
     align-content: center;
   }
-  .row-1{
-    float:none;
-  }
-
   .dropbtn2 {
     position: sticky;
     margin-top: 10px;
     margin-bottom: 10px;
     align-self: center;
+  }
+  .dropdown1 {
+    float: none;
   }
 }
