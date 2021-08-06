@@ -78,6 +78,9 @@ const setImage = (dataWeatherDescription) => {
     }else if (dataWeatherDescription == 'scattered clouds' || dataWeatherDescription == 'few clouds') {
         let imgSrc = '../static/img/Logo.png'
         return imgSrc
+    }else if (dataWeatherDescription == 'clear sky') {
+        let imgSrc = '../static/img/son.png'
+        return imgSrc
     }
     
 }
