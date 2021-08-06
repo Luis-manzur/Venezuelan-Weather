@@ -28,8 +28,6 @@ const renderWeatherInfoTemplate = (selectedCity) => {
     .then(data => {
         weatherNow = data
         readData(data, selectedCity)
-        
-        
     })
 }
 
