@@ -41,16 +41,16 @@ const readData = (data, selectedCity) => {
     temperature.innerHTML = dataTemperature + ' Cº     '
     const feelsLike = document.getElementById('feels-like')
     dataFeelsLike = data['now_weather']['feels_like']
-    feelsLike.innerHTML = 'Sensación: '+dataFeelsLike + ' Cº'
+    feelsLike.innerHTML = 'Feels Like: '+dataFeelsLike + ' Cº'
     const maxTemp = document.getElementById('max-temp')
     const dataMaxTemp = data['now_weather']['max_temp']
-    maxTemp.innerHTML = 'Temp Maxima: ' + dataMaxTemp + ' Cº'
+    maxTemp.innerHTML = 'Max Temp: ' + dataMaxTemp + ' Cº'
     const minTemp = document.getElementById('min-temp')
     const dataMinTemp = data['now_weather']['min_temp']
-    minTemp.innerHTML = 'Temp Mínima: ' + dataMinTemp + ' Cº'
+    minTemp.innerHTML = 'Min Temp: ' + dataMinTemp + ' Cº'
     const humidity = document.getElementById('humidity')
     const dataHumidity = data['now_weather']['humidity']
-    humidity.innerHTML = 'Humedad: ' + dataHumidity + '%'
+    humidity.innerHTML = 'Humidity: ' + dataHumidity + '%'
     const weatherDescription = document.getElementById('weather-description') 
     const dataWeatherDescription = data['now_weather']['weather_description']
     const selectedImg = setImage(dataWeatherDescription)
@@ -59,7 +59,7 @@ const readData = (data, selectedCity) => {
     weatherDescription.innerHTML =  dataWeatherDescription
     const windSpeed = document.getElementById('wind-speed')
     const dataWindSpeed = data['now_weather']['wind_speed']
-    windSpeed.innerHTML= 'Viento: ' + dataWindSpeed + ' m/h'
+    windSpeed.innerHTML= 'Wind: ' + dataWindSpeed + ' m/h'
 
     selectCity()
 
